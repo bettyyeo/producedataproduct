@@ -6,7 +6,7 @@ This README file is the supporting documentation for this Shiny application. It 
 1. Background
 2. About the project
 
-[source codes] (https://bettyyeo.shinyapps.io/datapdt).
+[shinyApps] (https://bettyyeo.shinyapps.io/datapdt).
 [presentation slide] (http://rpubs.com/bettyyeo/82136).
 
 **Background**
@@ -17,7 +17,7 @@ This README file is the supporting documentation for this Shiny application. It 
 
 **About the deployed application**
 
-This shiny application is deployed [here](https://bettyyeo.shinyapps.io/datapdt).  The project make use of previous assingment on the prediction model of the mtcars dataset.  
+This shiny application is deployed [here](https://bettyyeo.shinyapps.io/datapdt).  You could clone the server.r and ui.R in R-Studio. The project make use of previous assingment on the prediction model of the mtcars dataset.  
 
 You can view the slidify presentation in [rPub] (http://rpubs.com/bettyyeo/82136).  The markdown could be found in the index.rmd and the html in index.html.  To navigate the pages in rPub, please tab on the spacebar. 
 
