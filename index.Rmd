@@ -1,26 +1,57 @@
 ---
-title       : 
+title       : Developing Data product
 subtitle    : 
-author      : 
+author      : Betty Yeo
 job         : 
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : []            # {mathjax, quiz, bootstrap}
-mode        : selfcontained # {standalone, draft}
+mode        : standalone # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
-## Read-And-Delete
+## Developing Data product
 
-1. Edit YAML front matter
-2. Write using R Markdown
-3. Use an empty line followed by three dashes to separate slides!
+The purpose of the project is to build a shiny application and a slidify presentation. The assignment make use of the mtcars dataset to predict the miles per galon. The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles .
+
+```{r,cache=TRUE}
+library(datasets)
+head(mtcars, 5)
+```
+
+--- .class #id
+
+## Parameters
+
+We are interested to examine the correlation of the mpg with the following:
+
+-Transmission Type (Automatic , Manual)
+-No. of Cylinders
+-Weight of the cars
+-Horsepower
+
+Users will be presented with a user interface to input the parameter to see the correlation with the mpg
 
 --- .class #id 
 
-## Slide 2
+## Computation using Linear Model
+Using Linear model coeeficient which would be used to predict the MPG based on the input parameter
+
+```{r,cache=TRUE}
+lm(mpg ~ hp + cyl + wt +am, data=mtcars)
+```
 
 
+--- .class #id
 
+## Pediction model
 
+This shiny application is deployed [here](https://bettyyeo.shinyapps.io/datapdt) 
+
+![](assets/img/app.png)
+
+--- .class #id
+## Further instruction
+
+You can view the source codes and clone both the Server.R and UI.R files [here](https://github.com/bettyyeo/producedataproduct) in R-Studio and do a runApp
